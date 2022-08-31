@@ -4,6 +4,19 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    // Write code here
-  
+let numbers = result.input.split(" ");
+  let min = parseInt(numbers[0]);
+  let min_index = 0;
+
+  for (let i = numbers.length - 1; i > -0; i--) {
+    const element = parseInt(numbers[i]);
+
+    if (element <= min) {
+      min = element;
+      min_index = i;
+    }
+  }
+  [numbers[0], numbers[min_index]] = [min.toString, numbers[0]];
+
+  console.log(numbers);  
 });
