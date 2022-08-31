@@ -10,6 +10,6 @@ prompt.get('input', function (err, result) {
     let element = numbers[i];
     arr.unshift(element);
   }
-  console.log(arr);
+  console.log(arr.join(" "));
   
 });
