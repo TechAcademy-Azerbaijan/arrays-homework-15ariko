@@ -16,11 +16,8 @@ let numbers = result.input.split(" ");
       min_index = i;
     }
   }
-  [numbers[0], numbers[min_index], numbers[numbers.length - 1]] = [
-    min.toString(),
-    numbers[0],
-    0,
-  ];
-
-  console.log(numbers);
+  let temp = numbers[0];
+  numbers[0] = min.toString();
+  numbers[min_index] = temp;
+  console.log(numbers.join(" "));
 });
