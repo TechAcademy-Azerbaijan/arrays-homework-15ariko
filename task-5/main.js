@@ -14,5 +14,5 @@ let numbers = result.input.split(" ");
     }
     arr.push(element);
   }
-  console.log(arr);
+  console.log(arr.join(" ");
 });
