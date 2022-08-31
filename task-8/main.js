@@ -15,7 +15,7 @@ let numbers = result.input.split(" ");
     }
   }
   [numbers[numbers.length - 1], numbers[max_index]] = [
-    max.tostring(),
+    max.toString(),
     numbers[numbers.length - 1],
   ];
   console.log(numbers.join(" "));  
