@@ -8,7 +8,7 @@ let a = result.input.split(" ");
   let arr = [];
   for (let i = 0; i < a.length; i++) {
     if (i % 2 == 0) {
-      arr.push(n[i]);
+      arr.push(a[i]);
     }
   }
 
