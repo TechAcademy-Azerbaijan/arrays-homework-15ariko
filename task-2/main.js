@@ -4,7 +4,7 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-let numbers = result.input.split(" ");
+ let numbers = result.input.split(" ");
   let max = parseInt(numbers[0]);
   let index = 0;
 
@@ -15,5 +15,5 @@ let numbers = result.input.split(" ");
       index = i;
     }
   }
-  console.log('${max}\n${index + 1}');  
+  console.log(`${max}\n${index+1}`);
 });
